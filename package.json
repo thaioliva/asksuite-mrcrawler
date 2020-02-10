@@ -1,0 +1,35 @@
+{
+  "name": "asksuite-mrcrawler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "babel-node index.js",
+    "dev": "nodemon --exec babel-node index.js",
+    "test": "echo \"No test specified\" && exit 0",
+    "docker:build": "docker-compose build --no-cache app",
+    "docker:start": "docker-compose run -d app",
+    "docker:stop": "docker-compose stop app"
+  },
+  "keywords": [],
+  "author": "thaioliva",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "nodemon": "^1.18.9"
+  },
+  "dependencies": {
+    "@babel/plugin-proposal-optional-chaining": "^7.0.0-beta.4",
+    "body-parser": "^1.17.0",
+    "cheerio": "^1.0.0-rc.1",
+    "cors": "^2.4.2",
+    "crawler": "^1.0.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.15.0",
+    "helmet": "^2.1.3",
+    "moment": "^2.15.0",
+    "puppeteer": "^0.9.0"
+  }
+}
