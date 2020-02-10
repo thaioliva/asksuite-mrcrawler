@@ -2,6 +2,7 @@
 
 ### Setup 
 ```sh
+$ git clone https://github.com/thaioliva/asksuite-mrcrawler 
 $ npm install
 $ cp .env.example .env
 ```
